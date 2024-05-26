@@ -34,9 +34,9 @@ Open the index.html file in your browser:
     open index.html
 
 
-## Screenshots
+## Demo
 
-![App Screenshot](https://github.com/ashutoshshinde2/Assignment-Management-System-/blob/main/Output/Home%20page.png)
+https://ashutoshshinde2.github.io/Tic-Tac-Toe/
 
 
 

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-
+beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
+giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Start Game </title>
+</head>
+
+<body>
+    <script src="main.js"></script>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+
+                <img src="logo.png" alt="Logo" width="50" height="50" class="d-inline-
+block align-top">
+
+                <span style="font-size: 30px; Padding:20px;">Tic Tac Toe</span>
+            </a>
+        </div>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="card" id="sblok">
+            <div class="card-header">
+                Game
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Start your Game</h5>
+                <p class="card-text"> Tic-tac-toe (also known as noughts and crosses or
+                    Xs and Os) is
+                    a paper-and-pencil game for two players, X and O, who take turns
+                    marking the spaces in a 3×3 grid. The player who succeeds in placing
+                    three of their marks in a horizontal, vertical, or diagonal row wins the
+                    game.
+                </p>
+
+                <button onclick="start(document.getElementById('sblok'))" class="btn btn-primary">Start Game</button>
+
+            </div>
+        </div>
+        <br>
+        <div class="card" id="nameblock">
+            <div class="card-header">
+                Name
+            </div>
+            <div class="card-body ">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="firstplayer" placeholder="Name" name="firstplayer"
+                        required>
+                    <label for="floatingInput">First Player</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="secondplayer" placeholder="Name" name="secondplayer"
+                        reauired>
+                    <label for="floatingInput">Second Player</label>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit"
+                        onclick="setPlayers(document.getElementById('nameblock'))">Submit form</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="card clr" id="nametemp">
+            <div class="card-header">
+                Player Chanse
+            </div>
+            <div class="card-header ">
+                <div>
+
+                    <img src="x.png" alt="Logo" width="50" height="50" class="d-inline-
+    block align-top"><span class="btn btn-primary mar11" id="xplayer"></span><input type="radio" name="userturn"
+                        id="tern1" style="display:none" checked disabled><br><br>
+                    <input class="form-control" type="text" id="xplayerpoint" value=0 disabled>
+                </div>
+                <hr>
+                <div>
+
+                    <img src="o.png" alt="Logo" width="50" height="50" class="d-inline-
+    block align-top"><span class="btn btn-primary mar11" id="oplayer"></span><input type="radio" name="userturn"
+                        id="tern2" style="display:none" disabled><br><br>
+                    <input class="form-control" type="text" id="oplayerpoint" value=0 disabled>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="card clr" id="nametemp1">
+            <div class="card-header">
+                Get Started
+            </div>
+            <div class="card-body">
+                <br><br>
+                <div class="center">
+                    <img id="c1" onclick="changImg(fetchImg(this),this);" src="bg.png" class="rounded img-fluid">
+                    <img id="c2" onclick="changImg(fetchImg(this),this);" src="bg.png" class="rounded img-fluid">
+                    <img id="c3" onclick="changImg(fetchImg(this),this);" src="bg.png" class="rounded img-fluid">
+                </div>
+                <div class="center">
+                    <img id="c4" onclick="changImg(fetchImg(this),this);" src="bg.png" class="rounded img-fluid">
+                    <img id="c5" onclick="changImg(fetchImg(this),this);" src="bg.png" class="rounded img-fluid">
+                    <img id="c6" onclick="changImg(fetchImg(this),this);" src="bg.png" class="rounded img-fluid">
+                </div>
+                <div class="center">
+                    <img id="c7" onclick="changImg(fetchImg(this),this);" src="bg.png" class="rounded img-fluid">
+                    <img id="c8" onclick="changImg(fetchImg(this),this);" src="bg.png" class="rounded img-fluid">
+                    <img id="c9" onclick="changImg(fetchImg(this),this);" src="bg.png" class="rounded img-fluid">
+                </div>
+                <br><br>
+                <div class="center">
+
+                    <button type="button" onclick="resetg()" class="btn btn-
+primary">Reset Round</button>
+
+                    <button type="button" onclick="gameEnd()" class="btn
+btn-danger">End Game</button>
+                </div>
+                <br><br>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+    <script>
+        document.getElementById("xplayerpoint").style.backgroundColor = "lightGreen";
+        document.getElementById("oplayerpoint").style.backgroundColor = "#e9ecef";
+    </script>
+</body>
+
+</html>

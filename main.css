@@ -1,0 +1,28 @@
+.img-fluid
+{
+max-width: 30% !important;
+}
+.center
+{
+text-align: center;
+}
+.rounded
+{
+margin:2px 0px;
+}
+.mar11
+{
+margin:auto 30px;
+}
+.inv
+{
+display:none;
+}
+#nameblock
+{
+display:none;
+}
+.clr
+{
+display:none;
+}
